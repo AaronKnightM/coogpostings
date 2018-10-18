@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @event.name %>
+</p>
+
+<p>
+  <strong>Timestamp:</strong>
+  <%= @event.timestamp %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @event.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @event.description %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @event.details %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @event.location %>
+</p>
+
+<p>
+  <strong>Imgurl:</strong>
+  <%= @event.imgurl %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @event.tags %>
+</p>
+
+<p>
+  <strong>Org:</strong>
+  <%= @event.org %>
+</p>
+
+<p>
+  <strong>Upvotes:</strong>
+  <%= @event.upvotes %>
+</p>
+
+<p>
+  <strong>Downvotes:</strong>
+  <%= @event.downvotes %>
+</p>
+
+<p>
+  <strong>Extlink:</strong>
+  <%= @event.extlink %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
