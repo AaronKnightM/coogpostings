@@ -6,8 +6,8 @@ class CreateAds < ActiveRecord::Migration[5.2]
       t.timestamp :date_posted
       t.text :imgurl
       t.text :price
-      t.int :upvotes
-      t.int :downvotes
+      t.integer :upvotes
+      t.integer :downvotes
 
       t.timestamps
     end

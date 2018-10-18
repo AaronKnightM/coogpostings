@@ -10,8 +10,8 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.text :imgurl
       t.text :tags
       t.text :org
-      t.int :upvotes
-      t.int :downvotes
+      t.integer :upvotes
+      t.integer :downvotes
       t.text :extlink
 
       t.timestamps
