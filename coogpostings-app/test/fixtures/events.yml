@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  timestamp: 2018-10-18 17:30:52
+  title: MyText
+  description: MyText
+  details: MyText
+  location: MyText
+  imgurl: MyText
+  tags: MyText
+  org: MyText
+  upvotes: 
+  downvotes: 
+  extlink: MyText
+
+two:
+  name: MyText
+  timestamp: 2018-10-18 17:30:52
+  title: MyText
+  description: MyText
+  details: MyText
+  location: MyText
+  imgurl: MyText
+  tags: MyText
+  org: MyText
+  upvotes: 
+  downvotes: 
+  extlink: MyText
