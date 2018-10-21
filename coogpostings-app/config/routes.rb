@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'static/dashboard'
+  get 'static/manager'
+  get 'static/superuser'
+  get 'static/contactus'
   resources :ads
   resources :users
   resources :events
