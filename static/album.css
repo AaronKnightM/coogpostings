@@ -143,6 +143,7 @@ position:sticky;
 
 .expanded{
     background-size:0px;
+    background: transparent !important;
 }
 
 .card .btn-group{
