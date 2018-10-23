@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'static/manager'
   get 'static/superuser'
   get 'static/contactus'
+  get 'static/home'
   resources :ads
   resources :users
   resources :events
