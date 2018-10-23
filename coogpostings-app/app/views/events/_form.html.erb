@@ -17,11 +17,6 @@
   </div>
 
   <div class="field">
-    <%= form.label :timestamp %>
-    <%= form.datetime_select :timestamp, class: 'form-control' %>
-  </div>
-
-  <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title, class: 'form-control' %>
   </div>
@@ -57,16 +52,6 @@
   </div>
 
   <div class="field">
-    <%= form.label :upvotes %>
-    <%= form.text_field :upvotes, class: 'form-control' %>
-  </div>
-
-  <div class="field">
-    <%= form.label :downvotes %>
-    <%= form.text_field :downvotes, class: 'form-control' %>
-  </div>
-
-  <div class="field">
     <%= form.label :extlink %>
     <%= form.text_field :extlink, class: 'form-control' %>
   </div>
@@ -74,4 +59,5 @@
   <div class="actions">
     <%= form.submit %>
   </div>
+
 <% end %>
