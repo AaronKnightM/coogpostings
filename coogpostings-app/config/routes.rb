@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   get 'static/manager'
   get 'static/superuser'
   get 'static/contactus'
+<<<<<<< HEAD
+  get 'static/eventdetails'
+=======
   get 'static/allevents'
+>>>>>>> c02f1faa821f67338e571b0916fbd939d470ca51
 #<<<<<<< HEAD
   get 'static/admindashboard'
 #=======

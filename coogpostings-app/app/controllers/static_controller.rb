@@ -21,4 +21,9 @@ class StaticController < ApplicationController
   
   def home
   end
+  
+  def eventdetails
+     @events = Event.all
+  end 
+  
 end
