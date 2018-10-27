@@ -26,7 +26,8 @@ ActiveRecord::Schema.define(version: 2018_10_18_173559) do
 
   create_table "events", force: :cascade do |t|
     t.text "name"
-    t.datetime "timestamp"
+    t.text "date"
+    t.text "time"
     t.text "title"
     t.text "description"
     t.text "details"
