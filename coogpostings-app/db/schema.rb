@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2018_10_18_173559) do
     t.integer "upvotes"
     t.integer "downvotes"
     t.text "extlink"
+    t.text "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

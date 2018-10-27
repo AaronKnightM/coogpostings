@@ -14,6 +14,7 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.integer :upvotes
       t.integer :downvotes
       t.text :extlink
+      t.text :category
 
       t.timestamps
     end
