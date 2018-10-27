@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'static/manager'
   get 'static/superuser'
   get 'static/contactus'
+  get 'static/allevents'
 #<<<<<<< HEAD
   get 'static/admindashboard'
 #=======
