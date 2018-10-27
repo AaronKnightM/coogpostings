@@ -6,7 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first).save
 
-<<<<<<< HEAD
 Event.create(name: 'QPR Suicide Prevention Training', time: '11/1/2018 - 12:00pm - 1:00pm', details: 'Learn how to save a life. This nationally recognized program is designed to educate persons to recognize and respond to the signs of suicidal thinking and behaviors. Individuals will learn how to ask the suicide question, how to persuade the person to contact appropriate assistance, and how to identify referral options. See more.', imgurl: '').save
 Event.create(name: 'Alumni Mixer', time: '11/2/2018 - 6:00pm - 9:00pm', details: 'This is a great opportunity for our members to network with our alumni, and get some insight from those that were recently in their shoes. For the alumni, this is a chance to catch up with old classmates and professors and network with current MISSO members. Open to all ages!', imgurl: '').save
 Event.create(name: 'Rock Climbing at Greenbelt', time: '11/3/2018 - 8:00am - 10:00pm', details: 'Explore new sights. The Barton Creek Greenbelt is nestled on the banks of the Barton Creek, and this climbing destination is a great location to learn and something for all levels. See the schedule.', imgurl: '').save
@@ -15,8 +14,7 @@ Demers will also present a recital on Saturday, November 3 at South Main Baptist
 Event.create(name: 'Mystery Science Theater 3000 Live!', time: '11/3/2018 - 7:00pm - 9:00pm', details: 'Enjoy the humor of Mystery Science Theater 3000 Live. Purchase tickets.', imgurl: '').save
 Event.create(name: 'Walk MS: Houston', time: '11/4/2018 - 8:00am - 12:00pm', details: 'Join in the effort to raise awareness of multiple sclerosis and help raise funds for research about the disease. The 3 mile/1 mile, family friendly walk is a chance to team up with friends, loved ones and co-workers to change the world for everyone affected by MS. Register here.', imgurl: '').save
 Event.create(name: 'Hari Haran: Live in Concert', time: '11/4/2018 - 5:00pm - 7:00pm', details: 'Enjoy the music of Hari Haran. Purchase tickets.', imgurl: '').save
-Event.create(name: '28th Annual Choral Invitational', time: '11/5/2018 - 7:00pm - 9:00pm', details: 'Participating schools:
-=======
+Event.create(name: '28th Annual Choral Invitational', time: '11/5/2018 - 7:00pm - 9:00pm', details: 'Particip').save
 Event.create(name: 'QPR Suicide Prevention Training', timestamp: '11/1/2018 - 12:00pm - 1:00pm', location: 'Student Service Center 1 - 3rd Floor Rm. #302G', details: 'Learn how to save a life. This nationally recognized program is designed to educate persons to recognize and respond to the signs of suicidal thinking and behaviors. Individuals will learn how to ask the suicide question, how to persuade the person to contact appropriate assistance, and how to identify referral options. See more.', imgurl: '').save
 Event.create(name: 'Alumni Mixer', timestamp: '11/2/2018 - 6:00pm - 9:00pm',location: 'Pitch 25', details: 'This is a great opportunity for our members to network with our alumni, and get some insight from those that were recently in their shoes. For the alumni, this is a chance to catch up with old classmates and professors and network with current MISSO members. Open to all ages!', imgurl: '').save
 Event.create(name: 'Rock Climbing at Greenbelt', timestamp: '11/3/2018 - 8:00am - 10:00pm',location: 'Meet at the Campus Recreation and Wellness Center', details: 'Explore new sights. The Barton Creek Greenbelt is nestled on the banks of the Barton Creek, and this climbing destination is a great location to learn and something for all levels. See the schedule.', imgurl: '').save
@@ -34,7 +32,7 @@ Seven Lakes High School; Emily Chandler, director
 Shadow Creek High School; Jennifer Gallagher, director
 
 Note: Start time for this event is earlier than typical Moores School of Music events.', imgurl: '').save
-<<<<<<< HEAD
+
 Event.create(name: 'Coffee with a Cop', time: '11/6/2018 - 9:00am - 10:00am', details: 'Join University of Houston Police Department for a free cup of coffee and conversation.', imgurl: '').save
 Event.create(name: 'Sustainability Meetup: Superconductivity and Sustainable Energy Futures', time: '11/6/2018 - 5:00pm - 6:00pm', details: 'Did you know the Texas Center for Superconductivity is housed right here at UH? Superconductors play a vital role in the creation of a sustainable future with applications ranging from solar panel technology to fuel cell viability. Dont even know what a superconductor is? Come hear Dr. Meen describe many of these exciting developments and their applications. As usual networking and free food will be provided as part of the event. See more.', imgurl: '').save
 Event.create(name: 'Tour of Public Art of the University of Houston System', time: '11/7/2018 - 12:00pm - 1:00pm', details: 'Explore campus beauty. Public Art of the University of Houston System hosts free Public Art Tours on the first Wednesday of each month. These tours will alternate between University of Houston, University of Houston-Downtown, and the University of Houston Sugar Land. Register today.', imgurl: '').save
@@ -61,8 +59,8 @@ Event.create(name: 'Guest Masterclass: Gila Goldstein', time: '11/15/2018 - 7:30
 Event.create(name: 'AURA Contemporary Ensemble: Montague @ 75', time: '11/16/2018 - 7:30pm - 9:30pm', details: 'Rob Smith, director Alejandro Basulto, assistant director
 Moores School of Musics Fridays at Moores series continues with AURA Contemporary Ensembles Montague @ 75 performance, featuring music by guest composer Stephen Montague and other special guests.
 ', imgurl: '').save
-Event.create(name: 'The Debasers', time: '11/16/2018 - 7:30pm - 9:30pm', details: 'Every year, we handpick the best new play by one of our students and produce the show for your enjoyment. We invite you to support our theatre stars of tomorrow!
-=======
+Event.create(name: 'The Debasers', time: '11/16/2018 - 7:30pm - 9:30pm', details: 'Every year, we handpick the best new play by one of our students and produce the show for your enjoyment. We invite you to support our theatre stars of tomorrow!').save
+
 Event.create(name: 'Coffee with a Cop', timestamp: '11/6/2018 - 9:00am - 10:00am',location: 'Butler Plaza', details: 'Join University of Houston Police Department for a free cup of coffee and conversation.', imgurl: '').save
 Event.create(name: 'Sustainability Meetup: Superconductivity and Sustainable Energy Futures', timestamp: '11/6/2018 - 5:00pm - 6:00pm',location: 'Student Center South, Space City Room (#214)', details: 'Did you know the Texas Center for Superconductivity is housed right here at UH? Superconductors play a vital role in the creation of a sustainable future with applications ranging from solar panel technology to fuel cell viability. Dont even know what a superconductor is? Come hear Dr. Meen describe many of these exciting developments and their applications. As usual networking and free food will be provided as part of the event. See more.', imgurl: '').save
 Event.create(name: 'Tour of Public Art of the University of Houston System', timestamp: '11/7/2018 - 12:00pm - 1:00pm',location: 'Meet at the Wilhelminas Grove', details: 'Explore campus beauty. Public Art of the University of Houston System hosts free Public Art Tours on the first Wednesday of each month. These tours will alternate between University of Houston, University of Houston-Downtown, and the University of Houston Sugar Land. Register today.', imgurl: '').save
@@ -99,7 +97,6 @@ November 16, 17 at 7:30 p.m.
 November 17, 18 at 1:30 p.m.
 
 See the full 2018 – 2019 School of Theatre & Dance season at http://www.uh.edu/kgmca/theatre-and-dance/get-tickets/2018-2019/.', imgurl: '').save
-<<<<<<< HEAD
 Event.create(name: 'Farmers Market Bike Ride', time: '11/17/2018 - 8:00am - 6:00pm', details: 'Enjoy a day of biking through downtown Houston, shopping at a farmers markets and visiting Discovery Green. See more.', imgurl: '').save
 Event.create(name: 'Concert Chorale, Coro: Requiem for the Living', time: '11/17/2018 - 7:30pm - 9:30pm', details: 'Betsy Cook Weber, Jeb Mueller, choral preparation
 Arthur Gottschalk, Requiem for the Living 
@@ -115,7 +112,7 @@ Event.create(name: 'Symphony Orchestra', time: '11/29/2018 - 7:30pm - 9:30pm', d
 Under the director of guest conductor Tomislav Fačini, the Moores School of Musics Symphony Orchestra presents the music of Beethoven, featuring the Strings Division winner of MSM Concerto Competition.', imgurl: '').save
 Event.create(name: '$tart $mart: Salary-Negotiation Workshop', time: '11/30/2018 - 9:00am - 1:00pm', details: 'Make more money. $tart $mart prepares college women who are approaching the job market with the confidence, knowledge, and skills they need to negotiate salaries and benefits. Learn more about Womens, Gender & Sexuality Studies.', imgurl: '').save
 Event.create(name: 'I Am Life: An HIV/Stigma Narrative', time: '11/30/2018 - 7:00pm - 9:30pm', details: 'The LGBTQ Resource Center is hosting the T.R.U.T.H. Project for a World AIDS Day experience focused on HIV stigma, prevention and education as explored through spoken word, movement, and song. An often challenging reality will be explored through a multidisciplinary social art experience that will address HIV and stigma through the experiences of women. The space will place both artist and attendees in a position to look each other directly in the eyes and ask the question, On this journey, how will you define life? See more.', imgurl: '').save
-=======
+
 Event.create(name: 'Farmers Market Bike Ride', timestamp: '11/17/2018 - 8:00am - 6:00pm', location: 'Outdoor Adventure at the Rec Center', details: 'Enjoy a day of biking through downtown Houston, shopping at a farmers markets and visiting Discovery Green. See more.', imgurl: '').save
 Event.create(name: 'Concert Chorale, Coro: Requiem for the Living', timestamp: '11/17/2018 - 7:30pm - 9:30pm', location: 'South Main Baptist Church, 4100 S. Main Street, Houston, Texas 77002', details: 'Betsy Cook Weber, Jeb Mueller, choral preparation
 Arthur Gottschalk, Requiem for the Living 
@@ -131,4 +128,3 @@ Event.create(name: 'Symphony Orchestra', timestamp: '11/29/2018 - 7:30pm - 9:30p
 Under the director of guest conductor Tomislav Fačini, the Moores School of Musics Symphony Orchestra presents the music of Beethoven, featuring the Strings Division winner of MSM Concerto Competition.', imgurl: '').save
 Event.create(name: '$tart $mart: Salary-Negotiation Workshop', timestamp: '11/30/2018 - 9:00am - 1:00pm', location: 'Agnes Arnold Hall, Room 210', details: 'Make more money. $tart $mart prepares college women who are approaching the job market with the confidence, knowledge, and skills they need to negotiate salaries and benefits. Learn more about Womens, Gender & Sexuality Studies.', imgurl: '').save
 Event.create(name: 'I Am Life: An HIV/Stigma Narrative', timestamp: '11/30/2018 - 7:00pm - 9:30pm', location: 'Student Center South, Theater Rm 103', details: 'The LGBTQ Resource Center is hosting the T.R.U.T.H. Project for a World AIDS Day experience focused on HIV stigma, prevention and education as explored through spoken word, movement, and song. An often challenging reality will be explored through a multidisciplinary social art experience that will address HIV and stigma through the experiences of women. The space will place both artist and attendees in a position to look each other directly in the eyes and ask the question, On this journey, how will you define life? See more.', imgurl: '').save
->>>>>>> 5c222fbc3ff3730b871c0e63a58e7d42fafc0351

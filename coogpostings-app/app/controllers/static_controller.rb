@@ -22,6 +22,9 @@ class StaticController < ApplicationController
   def home
   end
   
+  def contactus
+  end
+  
   def eventdetails
      @events = Event.all
   end 
