@@ -2,6 +2,9 @@ class StaticController < ApplicationController
   def dashboard
     @events = Event.all
   end
+  def allevents
+     @events = Event.all
+  end
   def admindashboard
     @events = Event.all
   end
