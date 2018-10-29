@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  root 'static#dashboard'
   get 'static/dashboard'
   get 'static/manager'
   get 'static/superuser'
