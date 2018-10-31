@@ -58,6 +58,7 @@
   </thead>
 
   <tbody>
+    <% if @events.category = "business" %>
     <% @events.each do |event| %>
       <tr>
         <td><%= event.name %></td>
