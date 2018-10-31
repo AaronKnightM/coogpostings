@@ -22,20 +22,12 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">CoogPostings Admin Dashboard</a>
-      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
-        </li>
-      </ul>
-    </nav>
+
     
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <h1>Events</h1>
+      <h1><%= @cat %> Events</h1>
 <div class="table-responsive">
 <table class="table table-striped table-sm">
   <thead>
@@ -73,18 +65,9 @@
         <td><%= event.org %></td>
         <td><%= event.upvotes %></td>
         <td><%= event.extlink %></td>
-        <td><%= link_to 'Show', event %></td>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 </div>
 <br>
-
-<%= link_to 'New Event', new_event_path %>
-    </div>
-  </div>
-</div>
-
