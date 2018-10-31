@@ -1,6 +1,7 @@
 class StaticController < ApplicationController
   def dashboard
     @events = Event.all
+    @categories = [ "business", "entertainment", "studentorg", "social", "fundraising", "sport", "music", "townhall", "promotional"]
   end
   def allevents
      @events = Event.all
