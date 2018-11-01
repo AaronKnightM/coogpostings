@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_18_173559) do
+ActiveRecord::Schema.define(version: 2018_11_01_184919) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "ads", force: :cascade do |t|
     t.text "title"
@@ -29,14 +32,11 @@ ActiveRecord::Schema.define(version: 2018_10_18_173559) do
     t.text "date"
     t.text "time"
     t.text "title"
-    t.text "description"
     t.text "details"
     t.text "location"
     t.text "imgurl"
-    t.text "tags"
-    t.text "org"
+    t.text "cost"
     t.integer "upvotes"
-    t.integer "downvotes"
     t.text "extlink"
     t.text "category"
     t.datetime "created_at", null: false
@@ -52,6 +52,12 @@ ActiveRecord::Schema.define(version: 2018_10_18_173559) do
     t.text "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end

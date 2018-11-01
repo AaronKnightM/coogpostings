@@ -5,14 +5,11 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.text :date
       t.text :time
       t.text :title
-      t.text :description
       t.text :details
       t.text :location
       t.text :imgurl
-      t.text :tags
-      t.text :org
+      t.text :cost
       t.integer :upvotes
-      t.integer :downvotes
       t.text :extlink
       t.text :category
 
