@@ -1,4 +1,9 @@
 class CategoryController < ApplicationController
+  def allevents
+    @events = Event.all
+    @cat = "All"
+  end
+  
   def business
     @events = Event.where("category like ?", "business")
     @cat = "Business"

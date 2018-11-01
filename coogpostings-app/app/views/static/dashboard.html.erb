@@ -1,3 +1,4 @@
+<%= render "/static/header" %>
 <!doctype html>
 <html lang="en">
   <head>
@@ -30,6 +31,9 @@
         <div class="container">
            <h1 class="display-3">Featured Events</h1>
             <p>Check out some popular events today!</p>
+            
+            <!-- This is where we put the top 10 events -->
+            
         </div>
       </section>
       
@@ -44,12 +48,11 @@
     </div><% @categories.each do |cat| %>
         <div class="border col-md-2">
           <div class="view overlay h-40 d-inline-block">
-              <img class="card-img-top" src="<%= cat[1] %>" width=60%>
+              <% @reroute = "/category/" + cat[0] %> 
+              <a href="<%= @reroute %>"><img class="card-img-top" src="<%= cat[1] %>" width=60%></a>
           </div>
         <!-- Card content -->
           <div class="card-body">
-                  <!-- Social shares button -->
-                  <a class="activator waves-effect waves-light mr-4"><i class="fa fa-share-alt"></i></a>
                   <!-- Title -->
                   <h4 class="card-title"> <%= cat[2] %> </h4></h4>
           </div>
@@ -77,3 +80,4 @@
     <script src="../../assets/js/vendor/holder.min.js"></script>
   </body>
 </html>
+<%= render "/static/footer" %>

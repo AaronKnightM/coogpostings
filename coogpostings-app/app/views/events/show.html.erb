@@ -1,4 +1,4 @@
-
+<%= render "/static/header" %>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
@@ -31,26 +31,21 @@
 
 
 
-
+<p>
+  <strong>Category:</strong>
+  <%= @event.category.capitalize %>
+</p>
 
 <p>
   <strong>Date:</strong>
   <%= @event.date %>
 </p>
 
+
+
 <p>
   <strong>Time:</strong>
   <%= @event.time %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @event.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @event.description %>
 </p>
 
 <p>
@@ -65,18 +60,8 @@
 
 
 <p>
-  <strong>Tags:</strong>
-  <%= @event.tags %>
-</p>
-
-<p>
-  <strong>Org:</strong>
-  <%= @event.org %>
-</p>
-
-<p>
   <strong>Upvotes:</strong>
-  <%= @event.upvotes %>
+  <%= @event.upvotes.to_i %>
 </p>
 
 
@@ -86,3 +71,4 @@
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
+<%= render "/static/footer" %>
