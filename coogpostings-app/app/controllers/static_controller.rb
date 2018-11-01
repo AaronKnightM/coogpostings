@@ -1,7 +1,7 @@
 class StaticController < ApplicationController
   def dashboard
     @events = Event.all
-    @categories = [["business", "https://robohash.org/" + rand(100).to_s, "Business"], ["entertainment", "https://robohash.org/" + rand(100).to_s, "Entertainment"], ["studentorg", "https://robohash.org/" + rand(100).to_s, "Student Organization"], ["social", "https://robohash.org/" + rand(100).to_s, "Social"], ["fundraising", "https://robohash.org/" + rand(100).to_s, "Fundraising"], ["sport", "https://robohash.org/" + rand(100).to_s, "Sports"], ["music", "https://robohash.org/" + rand(100).to_s, "Music"], ["townhall", "https://robohash.org/" + rand(100).to_s, "Town Hall"], ["promotional", "https://robohash.org/" + rand(100).to_s, "Promotional"], ["allevents", "https://robohash.org/" + rand(100).to_s, "All Events"]]
+    @categories = [["business", "https://robohash.org/" + rand(100).to_s, "Business"],["educational", "https://robohash.org/" + rand(100).to_s, "Educational"], ["entertainment", "https://robohash.org/" + rand(100).to_s, "Entertainment"], ["studentorg", "https://robohash.org/" + rand(100).to_s, "Student Organization"], ["social", "https://robohash.org/" + rand(100).to_s, "Social"], ["fundraising", "https://robohash.org/" + rand(100).to_s, "Fundraising"], ["sport", "https://robohash.org/" + rand(100).to_s, "Sports"], ["music", "https://robohash.org/" + rand(100).to_s, "Music"], ["townhall", "https://robohash.org/" + rand(100).to_s, "Town Hall"], ["promotional", "https://robohash.org/" + rand(100).to_s, "Promotional"], ["allevents", "https://robohash.org/" + rand(100).to_s, "All Events"]]
   end
   def allevents
      @events = Event.all
