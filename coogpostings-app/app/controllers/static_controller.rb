@@ -35,5 +35,6 @@ class StaticController < ApplicationController
   def eventdetails
      @events = Event.all
   end 
-  
+  def signin
+  end
 end
