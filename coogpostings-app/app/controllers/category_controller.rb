@@ -49,4 +49,9 @@ class CategoryController < ApplicationController
     @cat = "Promotional"
   end
   
+  def educational
+    @events = Event.where("category like ?", "educational")
+    @cat = "Educational"
+  end
+  
 end
