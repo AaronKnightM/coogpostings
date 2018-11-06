@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'category/fundraising'
   get 'category/sport'
   get 'category/music'
+  get 'category/educational'
   get 'category/townhall'
   get 'category/promotional'
   get 'category/allevents'
