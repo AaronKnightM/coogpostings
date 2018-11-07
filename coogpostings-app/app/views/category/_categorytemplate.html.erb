@@ -46,7 +46,7 @@
     <% @events.each do |event| %>
 
                         
-<div class="col-sm-3">
+<div class="col-sm-2">
  <!-- Card -->
 <div class="card">
 
@@ -54,7 +54,7 @@
    <% @reroute = "/events/" + event.id.to_s %>
     <a href="<%= @reroute %>">
   <div class="view overlay">
-    <img class="card-img-top" src="<%= event.imgurl %>" style="max-height:300px; min-height:300px;">
+    <img class="card-img-top" src="<%= event.imgurl %>" style="height:200px;">
     <a>
       <div class="mask rgba-white-slight"></div>
     </a>
