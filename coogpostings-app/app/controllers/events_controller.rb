@@ -5,6 +5,11 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @events = Event.all
+    @category = params[:category_name]
+    
+    if params[:category_name]
+      @events = Event.where("category like ?", "#{category_name}")
+    end
   end
 
   # GET /events/1
