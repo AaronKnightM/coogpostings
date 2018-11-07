@@ -1,11 +1,4 @@
-<style>
-html, body{
-    margin:0px;
-    padding:0px;
-}
-</style>
-
-<nav class=" mt-0 pt-0 navbar navbar-expand-md navbar-light bg-light">
+<nav class="mt-0 pt-0 navbar navbar-expand-md navbar-light bg-light">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -24,14 +17,28 @@ html, body{
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
+    
+    <% if user_signed_in? %>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
+                <%= link_to "#{current_user.email}", edit_user_path(current_user), class: 'nav-link' %>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Sign Up</a>
+                <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'nav-link' %>
             </li>
         </ul>
     </div>
+    <% else %>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <%= link_to "Login", new_user_session_path, class: 'nav-link' %>
+            </li>
+            <li class="nav-item">
+                <%= link_to "Sign Up", new_user_registration_path, class: 'nav-link' %>
+            </li>
+        </ul>
+    </div>
+    <% end %>
 </nav>
