@@ -17,6 +17,13 @@
       
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    
+      <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="" rel="stylesheet">
@@ -37,22 +44,49 @@
       <p class="display-4 mx-auto">No events to show!</p>
     <% else %>
     <% @events.each do |event| %>
-        <div class="border col-md-2">
-          <div class="view overlay h-40 d-inline-block">
-              <% @reroute = "/events/" + event.id.to_s %> 
-              <a href="<%= @reroute %>"><img class="card-img-top" src="<%= event.imgurl %>" width=60%></a>
-          </div>
-        <!-- Card content -->
-          <div class="card-body">
-                  <!-- Title -->
-                  <h4 class="card-title"> <%= event.name %> </h4>
-                    <div class="card-body">
-                      <p class="card-text"> Date: <%= event.date %></p>
-                      <p class="card-text"> Time: <%= event.time %></p>
-                      <p class="card-text"> Location: <%= event.location %></p>
-                    </div>
-          </div>
-        </div>
+
+                        
+<div class="col-sm-3">
+ <!-- Card -->
+<div class="card">
+
+  <!-- Card image -->
+   <% @reroute = "/events/" + event.id.to_s %>
+    <a href="<%= @reroute %>">
+  <div class="view overlay">
+    <img class="card-img-top" src="<%= event.imgurl %>" style="max-height:300px; min-height:300px;">
+    <a>
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div></a>
+
+  <!-- Button -->
+  <a class="btn-floating btn-action ml-auto mr-4 mdb-color lighten-3"><i class="fa fa-chevron-right pl-1"></i></a>
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Title -->
+    <h4 class="card-title"><%= event.name %></h4>
+    <hr>
+    <!-- Text -->
+    <p class="card-text text-muted"> Location: <%= event.location %></p>
+    <p class="card-text">Description</p>
+
+  </div>
+
+  <!-- Card footer -->
+  <div class="rounded-bottom mdb-color lighten-3 text-center pt-3" style="background-color:#e2ecff;">
+    <ul class="list-unstyled list-inline font-small">
+      <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i><%= event.date %> , <%= event.time %></li>
+      <li class="list-inline-item"><a href="#" class="white-text"><i class="fa fa-twitter pr-1"> </i>Upvotes</a></li>
+    </ul>
+  </div>
+
+</div>
+<!-- Card -->
+    </div>
+
       <% end %>
       <% end %>
   </div>
@@ -66,7 +100,15 @@
 
     </main>
 
-
+<!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
