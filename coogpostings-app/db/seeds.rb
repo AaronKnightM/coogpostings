@@ -13,7 +13,7 @@ admin = User.create(fname: "Admin", lname: "CoogPostings", cougarnet_id: "000000
 
 admanager = User.create(fname: "Manager", lname: "CoogPostings", cougarnet_id: "0000000000", email: "ad-manager@coogpostings.com", phone: "000-000-0000", password: "password").save
 
-20.times do |u|
+100.times do |u|
     u_fname = Faker::Overwatch.hero
     u_cougarnetid = Faker::Number.number(10)
     u_email = "#{u_fname}-#{u_cougarnetid}@coogpostings.com"
