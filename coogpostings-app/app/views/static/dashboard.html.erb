@@ -17,7 +17,7 @@
     </div><% @categories.each do |cat| %>
         <div class="border col-md-2">
           <div class="view overlay h-40 d-inline-block">
-              <% @reroute = "/category/" + cat[0] %> 
+              <% @reroute = "/events/?category_name=" + cat[0] %> 
               <a href="<%= @reroute %>"><img class="card-img-top" src="<%= cat[1] %>" width=60%></a>
           </div>
           
