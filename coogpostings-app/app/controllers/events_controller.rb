@@ -5,13 +5,14 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     params.permit(:category_name)
+    @category_name = params[:category_name]
     
-    @events = Event.where("category like ?", @category_name)
-    # @category = params[:category_name]
+    if params[:category_name]
+      @events = Event.where("category like ?", @category_name)
+    else
+      @events = Event.all
+    end
     
-    #if params[:category_name]
-    #  @events = Event.where("category like ?", "#{category_name}")
-    #end
   end
 
   # GET /events/1
