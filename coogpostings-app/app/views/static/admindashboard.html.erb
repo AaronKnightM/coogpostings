@@ -55,7 +55,7 @@
         <td><%= event.details %></td>
         <td><%= event.location %></td>
         <td><%= event.imgurl %></td>
-        <td><%= event.upvotes %></td>
+        <td><%= event.get_upvotes.size %></td>
         <td><%= event.extlink %></td>
         <td><%= link_to 'Show', event %></td>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>

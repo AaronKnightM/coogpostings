@@ -1,6 +1,19 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
+  # Upvote and Downvote Functionality
+  def upvote 
+    @event = Event.find(params[:id])
+    @event.upvote_from current_user
+    redirect_back(fallback_location: events_path)  
+  end
+  
+  def downvote 
+    @event = Event.find(params[:id])
+    @event.downvote_from current_user
+    redirect_back(fallback_location: events_path)  
+  end
+  
   # GET /events
   # GET /events.json
   def index
