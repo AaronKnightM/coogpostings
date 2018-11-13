@@ -8,7 +8,6 @@ gem 'rails', '~> 5.2.1'
 gem 'pg'
 gem 'acts_as_votable'
 # Use sqlite3 as the database for Active Record
-
 gem 'devise'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
