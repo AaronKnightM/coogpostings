@@ -13,12 +13,6 @@ admin = User.create(fname: "Admin", lname: "CoogPostings", cougarnet_id: "000000
 
 admanager = User.create(fname: "Manager", lname: "CoogPostings", cougarnet_id: "0000000000", email: "ad-manager@coogpostings.com", phone: "000-000-0000", password: "password").save
 
-100.times do |u|
-    u_fname = Faker::Overwatch.hero
-    u_cougarnetid = Faker::Number.number(10)
-    u_email = "#{u_fname}-#{u_cougarnetid}@coogpostings.com"
-    user = User.create(fname: u_fname, lname: "CoogPostings", cougarnet_id: u_cougarnetid, email: u_email, phone: "000-000-0000", password: "password").save
-end
 
 Event.create(category:'Educational', name: 'QPR Suicide Prevention Training', time: '11/1/2018 - 12:00pm - 1:00pm', details: 'Learn how to save a life. This nationally recognized program is designed to educate persons to recognize and respond to the signs of suicidal thinking and behaviors. Individuals will learn how to ask the suicide question, how to persuade the person to contact appropriate assistance, and how to identify referral options. See more.', imgurl: 'https://s3.amazonaws.com/coogpostings-jose/1-event-image.jpg', cost: 'Free', extlink: 'http://www.uh.edu/caps/outreach/qpr_suicide_prevention.html', upvotes: 0).save
 Event.create(category:'Student-Org', name: 'Alumni Mixer', time: '11/2/2018 - 6:00pm - 9:00pm', details: 'This is a great opportunity for our members to network with our alumni, and get some insight from those that were recently in their shoes. For the alumni, this is a chance to catch up with old classmates and professors and network with current MISSO members. Open to all ages!', imgurl: 'https://s3.amazonaws.com/coogpostings-jose/2-event-image.jpg', cost: 'Must be member', extlink: 'http://www.misso.org/events/', upvotes: 0).save
