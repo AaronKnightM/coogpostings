@@ -1,0 +1,48 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :fname %>
+    <%= form.text_field :fname, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lname %>
+    <%= form.text_field :lname, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cougarnet_id %>
+    <%= form.text_field :cougarnet_id, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.text_field :password, class: 'form-control' %>
+  </div>
+  
+  <div class="actions">
+    <button class="btn btn-primary btn-lg btn-block" type="submit" style="background-color:#C8102E">Create Account</button>
+  </div>
+  
+<% end %>

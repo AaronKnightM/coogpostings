@@ -1,0 +1,44 @@
+<nav class="mt-0 pt-0 navbar navbar-expand-md navbar-light bg-light">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <%= link_to "All Events", events_path, class: 'nav-link' %>
+            </li>
+            <li class="nav-item">
+                <%= link_to "Manager Dashboard", static_admindashboard_path, class: 'nav-link' %>
+            </li>
+        </ul>
+    </div>
+    <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+        <a class="mx-auto" href="/">
+            <img src="/images/CougPostingsLogo.png" class="img-fluid" >
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    
+    <% if user_signed_in? %>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <%= link_to "#{current_user.email}", edit_user_path(current_user), class: 'nav-link' %>
+            </li>
+            <li class="nav-item">
+                <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'nav-link' %>
+            </li>
+        </ul>
+    </div>
+    <% else %>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <%= link_to "Login", new_user_session_path, class: 'nav-link' %>
+            </li>
+            <li class="nav-item">
+                <%= link_to "Sign Up", new_user_registration_path, class: 'nav-link' %>
+            </li>
+        </ul>
+    </div>
+    <% end %>
+</nav>

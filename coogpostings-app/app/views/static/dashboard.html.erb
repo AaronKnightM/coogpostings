@@ -1,0 +1,32 @@
+
+
+    <main role="main">
+      <section class="jumbotron">
+        <div class="container">
+           <h1 class="display-3">Featured Events</h1>
+            <p>Check out some popular events today!</p>
+            <!-- This is where we put the top 10 events -->
+        </div>
+      </section>
+      
+<main role="main">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 align="center">Categories</h1>
+    </div><% @categories.each do |cat| %>
+        <div class="border col-md-2 ">
+          <div class="view overlay h-40 d-flex justify-content-center">
+              <% @reroute = "/events/?category_name=" + cat[2] %> 
+              <a href="<%= @reroute %>"><img class="card-img-top" src="<%= cat[1] %>" width=60%></a>
+          </div>
+          
+          <div class="card-body">
+                  <!-- Title -->
+                  <h4 class="card-title"> <%= cat[2] %> </h4></h4>
+          </div>
+        </div>
+      <% end %>
+  </div>
+</div>
+</main>
