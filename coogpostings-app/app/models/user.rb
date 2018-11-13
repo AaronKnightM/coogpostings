@@ -4,4 +4,5 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
     enum status: [:archived, :published, :draft, :pending_review, :removed]
+  acts_as_voter
 end

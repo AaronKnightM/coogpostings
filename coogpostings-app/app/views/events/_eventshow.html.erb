@@ -38,7 +38,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <h1 class="display-2" align="center"><%= @cat %> Events</h1>
+      <h1 class="display-2" align="center"><%= @category_name %> Events</h1>
     </div>
     <% if @events.empty? %>
       <p class="display-4 mx-auto">No events to show!</p>
@@ -46,7 +46,7 @@
     <% @events.each do |event| %>
 
                         
-<div class="col-sm-2">
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 pt-4 pb-4">
  <!-- Card -->
 <div class="card">
 
@@ -54,7 +54,7 @@
    <% @reroute = "/events/" + event.id.to_s %>
     <a href="<%= @reroute %>">
   <div class="view overlay">
-    <img class="card-img-top" src="<%= event.imgurl %>" style="height:200px;">
+    <img class="card-img-top" src="<%= event.imgurl %>" style="height:200px">
     <a>
       <div class="mask rgba-white-slight"></div>
     </a>
@@ -78,8 +78,20 @@
   <!-- Card footer -->
   <div class="rounded-bottom mdb-color lighten-3 text-center pt-3" style="background-color:#e2ecff;">
     <ul class="list-unstyled list-inline font-small">
-      <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i><%= event.date %> , <%= event.time %></li>
-      <li class="list-inline-item"><a href="#" class="white-text"><i class="fa fa-twitter pr-1"> </i>Upvotes</a></li>
+      <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i><%= event.date %> , <%= event.time %></li><br>
+      <!--Upvotes-->
+      <li class="list-inline-item"><%= link_to like_event_path(event), method: :put do %>
+      <img src="/images/upvote.png" class="w-25" style="height:15px">
+      <% end %>
+      </li>
+      <!--Downvotes-->
+      <li class="list-inline-item"><%= link_to unlike_event_path(event), method: :put do %>
+      <img src="/images/downvote.png" class="w-25" style="height:15px">
+      <% end %>
+      </li><br>
+      <li class="list-inline-item">
+      Upvotes: <%= event.get_upvotes.size %>
+      </li>
     </ul>
   </div>
 
