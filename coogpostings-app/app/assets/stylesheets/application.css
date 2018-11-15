@@ -4,11 +4,18 @@
 h1 {
   padding-bottom: 2rem;
     text-align: center;
+    font-family: "Milo" !important;
 }
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
+  font-family: "Milo" !important;
+}
+
+a{
+  color:#C8102E !important;
+  font-family: "Milo";
 }
 
 /* CUSTOMIZE THE SHOWCASE
