@@ -38,7 +38,7 @@
 <div class="container-fluid" style="padding-left:100px; padding-right:100px;">
   <div class="row">
     <div class="col-md-12">
-      <h1 class="display-2" align="center"><%= @category_name %> Events</h1>
+      <h1 align="center"><%= @category_name %> Events</h1>
     </div>
     <% if @events.empty? %>
       <p class="display-4 mx-auto">No events to show!</p>
@@ -46,7 +46,7 @@
     <% @events.each do |event| %>
 
                         
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 pt-4 pb-4">
+<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 pt-4 pb-4">
  <!-- Card -->
 <div class="card">
   <!-- Card image -->
@@ -59,8 +59,6 @@
     </a>
   </div></a>
 
-  <!-- Button -->
-  <a class="btn-floating btn-action ml-auto mr-4 mdb-color lighten-3"><i class="fa fa-chevron-right pl-1"></i></a>
 
   <!-- Card content -->
   <div class="card-body">

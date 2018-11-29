@@ -1,7 +1,16 @@
 class StaticController < ApplicationController
   def dashboard
     @events = Event.all
-    @categories = [["business", "https://robohash.org/" + rand(100).to_s, "Business"],["educational", "https://robohash.org/" + rand(100).to_s, "Educational"], ["entertainment", "https://robohash.org/" + rand(100).to_s, "Entertainment"], ["studentorg", "https://robohash.org/" + rand(100).to_s, "Student-Org"], ["social", "https://robohash.org/" + rand(100).to_s, "Social"], ["fundraising", "https://robohash.org/" + rand(100).to_s, "Fundraising"], ["sport", "https://robohash.org/" + rand(100).to_s, "Sports"], ["music", "https://robohash.org/" + rand(100).to_s, "Music"], ["townhall", "https://robohash.org/" + rand(100).to_s, "Town-Hall"], ["promotional", "https://robohash.org/" + rand(100).to_s, "Promotional"]]
+    @categories = [["business", "https://gdurl.com/oIka", "Business"],
+    ["educational", "https://gdurl.com/c2zg", "Educational"], 
+    ["entertainment", "https://gdurl.com/vgwa", "Entertainment"], 
+    ["studentorg", "https://gdurl.com/XV3M", "Student-Org"], 
+    ["social", "https://gdurl.com/S5as", "Social"], 
+    ["fundraising", "https://gdurl.com/J075", "Fundraising"], 
+    ["sport", "https://gdurl.com/VnHH", "Sports"], 
+    ["music", "https://gdurl.com/LMTy", "Music"], 
+    ["townhall", "https://gdurl.com/50kX", "Town-Hall"], 
+    ["promotional", "https://gdurl.com/59C6", "Promotional"]]
   end
   def allevents
      @events = Event.all

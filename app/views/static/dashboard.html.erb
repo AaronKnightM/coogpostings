@@ -16,10 +16,10 @@
     <div class="col-md-12">
       <h1 align="center">Categories</h1>
     </div><% @categories.each do |cat| %>
-        <div class="border col-md-2 ">
+        <div class="border col-md-4 col-lg-3 col-sm-6 col-xs-12">
           <div class="view overlay h-40 d-flex justify-content-center">
               <% @reroute = "/events/?category_name=" + cat[2] %> 
-              <a href="<%= @reroute %>"><img class="card-img-top" src="<%= cat[1] %>" width=60%></a>
+              <a href="<%= @reroute %>"><img class="card-img-top pt-2" src="<%= cat[1] %>" width=60%></a>
           </div>
           
           <div class="card-body">
