@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-
+<div class="container" style="width:300px">
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name, class: 'form-control' %>
@@ -56,8 +56,8 @@
     <%= form.text_field :extlink, class: 'form-control' %>
   </div>
 
-  <div class="actions">
+  <div class="actions" style="text-align:center; margin-top: 50px;">
     <%= form.submit %>
   </div>
-
+</div>
 <% end %>

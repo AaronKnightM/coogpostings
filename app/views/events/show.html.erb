@@ -5,59 +5,53 @@
   <link href="cover.css" rel="stylesheet">
 </head>
 
-<body class="text-center">
+<body>
       <main role="main" class="inner cover">
+   <br>     
+<h3 align="center"><%= @event.date %>, <%= @event.time %></h3>
+   <h1> <%= @event.name %></h1>
+
+   <h3 align="center">at: <%= @event.location %></h3>
+
+   
+
+
+
+        <div class="container" style="background-color:grey;">
           <p>
-          <div class="h-50 d-inline-block" style="width: 500px">
+          <div class="h-50 d-inline-block" align="center" style="border:1px;">
           <picture class="w-80">
-            <img src="<%= @event.imgurl %>" width="60%" height="">
+            <img src="<%= @event.imgurl %>" width="75%" height="75%">
           </picture>
           </div>
         </p>
-        <p>
-        <strong>Name:</strong>
-          <%= @event.name %>
-        </p>
+        
       </main>
     </div>
-
+</div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 
 
-
-
-
+<h4 align="center">
 <p>
   <strong>Category:</strong>
   <%= @event.category.capitalize %>
 </p>
 
-<p>
-  <strong>Date:</strong>
-  <%= @event.date %>
-</p>
 
-
-
-<p>
-  <strong>Time:</strong>
-  <%= @event.time %>
-</p>
 
 <p>
   <strong>Details:</strong>
+  <p>
   <%= @event.details %>
+  </p>
 </p>
 
-<p>
-  <strong>Location:</strong>
-  <%= @event.location %>
-</p>
-
-
+</h4>
+<h4 align="center">
 <p>
   <strong>Upvotes:</strong>
   <%= @event.get_upvotes.size %>
@@ -70,3 +64,4 @@
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
+</h4>
